@@ -78,19 +78,23 @@ const WateringcanImages = [Wateringcan, Wateringcan, PinPackInsta];
 const YogaMatImages = [YogaMatOne, YogaMatTwo, PinPackInsta];
 const JigsawImages = [JigsawOne, JigsawTwo, PinPackInsta];
 const GuestBookImages = [GuestBookOne, GuestBookTwo, PinPackInsta];
-const BlanketImages = [BlanketOne, BlanketTwo];
-const CardImages = [CardsOne, CardsTwo];
-const ToteImages = [ToteOne, ToteTwo];
-const TopplingTowerImages = [TopplingTowerOne, TopplingTowerTwo];
-const ServingSpoonImages = [ServingSpoonsOne, ServingSpoonsTwo];
-const NoestScribblesImages = [NotesScribblesOne, NotesScribblesTwo];
-const ChoppingBoardImages = [ChoppingBoardOne, ChoppingBoardTwo];
-const CapImages = [CapOne, CapTwo];
+const BlanketImages = [BlanketOne, BlanketTwo, PinPackInsta];
+const CardImages = [CardsOne, CardsTwo, PinPackInsta];
+const ToteImages = [ToteOne, ToteTwo, PinPackInsta];
+const TopplingTowerImages = [TopplingTowerOne, TopplingTowerTwo, PinPackInsta];
+const ServingSpoonImages = [ServingSpoonsOne, ServingSpoonsTwo, PinPackInsta];
+const NoestScribblesImages = [
+  NotesScribblesOne,
+  NotesScribblesTwo,
+  PinPackInsta,
+];
+const ChoppingBoardImages = [ChoppingBoardOne, ChoppingBoardTwo, PinPackInsta];
+const CapImages = [CapOne, CapTwo, PinPackInsta];
 
-const OpenHomesImages = [OpenHomes];
-const SakuraImages = [Sakura];
-const WinterOlympicsImages = [WinterOlympics];
-const StpatricksDayImages = [StPatricksdayOne, StPatricksdayTwo];
+const OpenHomesImages = [OpenHomes, OpenHomes, PinPackInsta];
+const SakuraImages = [Sakura, Sakura, PinPackInsta];
+const WinterOlympicsImages = [WinterOlympics, WinterOlympics, PinPackInsta];
+const StpatricksDayImages = [StPatricksdayOne, StPatricksdayTwo, PinPackInsta];
 
 const productCardInfo = [
   {
