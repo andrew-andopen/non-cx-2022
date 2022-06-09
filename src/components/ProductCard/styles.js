@@ -23,6 +23,7 @@ export const Image = styled.img`
   aspect-ratio: 1/1;
   object-fit: cover;
   background-repeat: no-repeat;
+  min-height: 224px;
 `;
 
 export const ProductTitle = styled.h4`
