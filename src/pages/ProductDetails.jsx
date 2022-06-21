@@ -16,7 +16,7 @@ export const PaddingTopLarge = styled(PaddingTop)`
   padding-top: 12em;
 
   @media ${devices.mobileL} {
-    padding-top: 6em;
+    padding-top: 8em;
   }
 `;
 
