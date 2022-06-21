@@ -28,7 +28,7 @@ export const PrimaryButton = styled(StyledButton)`
   }
 
   @media ${devices.mobileL} {
-    padding: 12px 16px;
+    padding: 12px 8px;
     font-size: 12px;
   }
 

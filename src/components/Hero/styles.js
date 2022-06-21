@@ -35,5 +35,6 @@ export const GridContainer = styled.div`
 
   @media ${devices.mobileL} {
     margin-top: 1em;
+    gap: 0.2em;
   }
 `;
