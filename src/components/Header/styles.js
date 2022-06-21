@@ -18,7 +18,7 @@ export const StyledHeader = styled.header`
     padding: 4.4em 3.2em;
   }
 
-  @media ${devices.mobileM} {
+  @media ${devices.mobileS} {
     flex-direction: column;
   }
 `;
