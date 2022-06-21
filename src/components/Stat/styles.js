@@ -1,9 +1,14 @@
 import styled from "styled-components";
+import { devices } from "../../styles";
 
 export const StatContainer = styled.div`
   display: flex;
   gap: 4rem;
   margin-bottom: ${({ $isLast }) => ($isLast ? 0 : "4.8em")};
+
+  @media ${devices.tabletS} {
+    flex-direction: column;
+  }
 `;
 
 export const ImageContainer = styled.div`
@@ -15,6 +20,10 @@ export const ImageContainer = styled.div`
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 0.8em;
   overflow: hidden;
+
+  @media ${devices.tabletS} {
+    min-width: 100%;
+  }
 `;
 
 export const Image = styled.img`

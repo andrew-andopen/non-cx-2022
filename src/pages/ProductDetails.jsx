@@ -10,9 +10,14 @@ import ProductCardData from "../data/productCardInfo";
 //Styles
 import styled from "styled-components";
 import ScrollToTop from "../components/ScrollToTop";
+import { devices } from "../styles";
 
 export const PaddingTopLarge = styled(PaddingTop)`
   padding-top: 12em;
+
+  @media ${devices.mobileL} {
+    padding-top: 6em;
+  }
 `;
 
 export const ImageContainer = styled.div`
@@ -27,10 +32,15 @@ export const ImageContainer = styled.div`
 export const Image = styled.img`
   object-fit: cover;
   height: 100%;
+  min-height: 303px;
   grid-column: ${({ $index }) => ($index === 2 ? "span 2" : "span 1")};
   padding: ${({ $index }) => ($index === 2 ? "4rem" : null)};
   background: ${({ $index }) => ($index === 2 ? "#F6F4F5" : null)};
   cursor: pointer;
+
+  @media ${devices.mobileL} {
+    grid-column: span 2;
+  }
 `;
 
 export const StyledProductDetails = styled.div`
@@ -40,12 +50,20 @@ export const StyledProductDetails = styled.div`
 export const ProductDetailsConntainer = styled.div`
   display: flex;
   gap: 6.4em;
+
+  @media ${devices.tabletL} {
+    flex-direction: column;
+  }
 `;
 
 export const H1 = styled.h1`
   font-family: CerealMedium;
   font-size: 48px;
   margin-bottom: 3.2rem;
+
+  @media ${devices.mobileL} {
+    font-size: 3.2em;
+  }
 `;
 
 export const P = styled.p`
@@ -58,11 +76,19 @@ export const P = styled.p`
 export const ButtonContainer = styled.div`
   display: flex;
   gap: 8px;
+
+  @media ${devices.mobileL} {
+    flex-direction: column;
+  }
 `;
 
 export const ProductDetailsContainer = styled(StyledContainer)`
   max-width: 1440px;
   padding: 8rem 8rem 10rem 8rem;
+
+  @media ${devices.tabletL} {
+    padding: 1rem 4rem 1rem 4rem;
+  }
 `;
 
 const ProductDetails = ({ modalHandler }) => {

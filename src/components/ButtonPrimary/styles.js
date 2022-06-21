@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { StyledButton } from "../Button/styles";
+import { devices } from "../../styles";
 
 export const PrimaryButton = styled(StyledButton)`
   color: #fff;
@@ -24,5 +25,16 @@ export const PrimaryButton = styled(StyledButton)`
       #bd1e59 100%
     );
     background-size: 200% 200%;
+  }
+
+  @media ${devices.mobileL} {
+    padding: 12px 16px;
+    font-size: 12px;
+  }
+
+  @media ${devices.mobileS} {
+    padding: 16px 16px;
+    width: 100%;
+    margin-top: 24px;
   }
 `;

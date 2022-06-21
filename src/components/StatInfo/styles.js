@@ -8,6 +8,6 @@ export const H3 = styled.h3`
 
 export const P = styled.p`
   font-size: 1.6em;
-  line-height: 1.7em;
+  line-height: 24px;
   margin-bottom: 2.4em;
 `;

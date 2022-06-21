@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { devices } from "../../styles";
 
 export const CallOutContainer = styled.div`
   display: flex;
@@ -9,6 +10,10 @@ export const CallOutContainer = styled.div`
   margin-bottom: 4em;
 
   width: 42%;
+
+  @media ${devices.mobileL} {
+    width: 70%;
+  }
 `;
 
 export const ImageContainer = styled.div`

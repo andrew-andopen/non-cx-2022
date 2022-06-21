@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { devices } from "../../styles";
 
 export const StyledFlexContainer = styled.div`
   display: flex;
@@ -6,6 +7,15 @@ export const StyledFlexContainer = styled.div`
   justify-content: space-around;
 
   gap: 24px;
+
+  @media ${devices.mobileL} {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media ${devices.tabletL} {
+    flex-wrap: wrap;
+  }
 `;
 
 const FlexContainer = ({ children, wrap }) => {

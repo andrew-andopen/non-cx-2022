@@ -1,9 +1,14 @@
 import styled from "styled-components";
+import { devices } from "../../styles";
 
 export const StyledFaqQuestion = styled.div`
   text-align: left;
   border-bottom: 1px solid #dedede;
   width: calc(50% - 16px);
+
+  @media ${devices.mobileL} {
+    width: 100%;
+  }
 `;
 
 export const QuestionAnswerContainer = styled.div`

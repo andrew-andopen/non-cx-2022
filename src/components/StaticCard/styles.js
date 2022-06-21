@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const CardContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 633px;
+  /* width: 633px; */
 `;
 
 export const Content = styled.div`

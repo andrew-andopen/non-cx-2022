@@ -32,7 +32,11 @@ const Catalog = ({ test }) => {
       <Container isFullWidth>
         <CatalogueContainer>
           <div
-            style={{ textAlign: "center", maxWidth: "75%", margin: "0 auto" }}
+            style={{
+              textAlign: "center",
+              maxWidth: "75%",
+              margin: "0 auto",
+            }}
           >
             <H1>Custom campaign gifts </H1>
             <P>

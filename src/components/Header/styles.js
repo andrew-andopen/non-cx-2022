@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { devices } from "../../styles";
 
 export const StyledHeader = styled.header`
   width: 100%;
@@ -12,9 +13,21 @@ export const StyledHeader = styled.header`
     props.hasScrolled ? "rgb(0 0 0 / 12%) 0px 1px 14px" : ""};
   border-bottom: ${(props) => (props.hasScrolled ? "" : "1px solid #eee")};
   z-index: 1;
+
+  @media ${devices.mobileM} {
+    flex-direction: column;
+  }
+
+  @media ${devices.mobileL} {
+    padding: 4.4em 3.2em;
+  }
 `;
 
 export const Image = styled.img`
   width: 14em;
   height: auto;
+
+  @media ${devices.mobileL} {
+    width: 12em;
+  }
 `;
