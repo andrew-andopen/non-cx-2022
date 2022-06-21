@@ -14,12 +14,12 @@ export const StyledHeader = styled.header`
   border-bottom: ${(props) => (props.hasScrolled ? "" : "1px solid #eee")};
   z-index: 1;
 
-  @media ${devices.mobileM} {
-    flex-direction: column;
-  }
-
   @media ${devices.mobileL} {
     padding: 4.4em 3.2em;
+  }
+
+  @media ${devices.mobileM} {
+    flex-direction: column;
   }
 `;
 
