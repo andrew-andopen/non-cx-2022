@@ -31,7 +31,7 @@ export const ImageContainer = styled.div`
 
 export const Image = styled.img`
   object-fit: cover;
-  height: 100%;
+  min-height: 100%;
   min-height: 303px;
   grid-column: ${({ $index }) => ($index === 2 ? "span 2" : "span 1")};
   padding: ${({ $index }) => ($index === 2 ? "4rem" : null)};

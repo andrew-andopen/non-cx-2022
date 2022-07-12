@@ -23,6 +23,7 @@ export const ImageContainer = styled.div`
 
   @media ${devices.tabletS} {
     min-width: 100%;
+    padding: ${({ $isLast }) => ($isLast ? "2.5em" : "0")};
   }
 `;
 
