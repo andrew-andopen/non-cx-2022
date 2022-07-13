@@ -113,6 +113,7 @@ const ProductDetails = ({ modalHandler }) => {
           <ImageContainer>
             {selectedCard.images.map((image, index) => (
               <Image
+                key={index}
                 src={selectedCard.images[index]}
                 $index={index}
                 onClick={() => modalHandler(selectedCard.images[index])}
